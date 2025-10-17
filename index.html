@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>La Magia de Ella</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <section class="poem">
+    <h1>🪄 La magia que tú creaste en mí</h1>
+    <p>
+      No necesito varita ni encantamiento,<br>
+      porque tu sonrisa ya es mi mejor conjuro.<br>
+      En cada mirada lanzas un hechizo lento,<br>
+      y en mi pecho, tu nombre es un murmullo seguro.
+    </p>
+  </section>
+
+  <section class="quiz">
+    <h2>🐍 ¿Eres digna de Slytherin?</h2>
+    <form id="slytherinQuiz">
+      <label>1. ¿Qué valoras más?<br>
+        <input type="radio" name="q1" value="ambición" /> Ambición<br>
+        <input type="radio" name="q1" value="lealtad" /> Lealtad<br>
+      </label><br>
+      <label>2. ¿Qué criatura te representa?<br>
+        <input type="radio" name="q2" value="serpiente" /> Serpiente<br>
+        <input type="radio" name="q2" value="águila" /> Águila<br>
+      </label><br>
+      <label>3. ¿Qué harías con una poción poderosa?<br>
+        <input type="radio" name="q3" value="usar" /> Usarla con astucia<br>
+        <input type="radio" name="q3" value="guardar" /> Guardarla por si acaso<br>
+      </label><br>
+      <label>4. ¿Tu animal?<br>
+        <input type="radio" name="q4" value="milo" /> Milo<br>
+        <input type="radio" name="q4" value="ory" /> Ory<br>
+        <input type="radio" name="q4" value="pollito" /> Un pollito<br>
+      </label><br>
+      <button type="submit">Enviar</button>
+    </form>
+    <div id="quizResult"></div>
+  </section>
+
+  <section class="hogwarts-letter">
+    <h2>✉️ Carta de Hogwarts</h2>
+    <p>
+      Estimada [Nombre de ella],<br><br>
+      Nos complace informarte que has sido aceptada en la casa Slytherin del corazón de Wizi.<br>
+      Tu astucia, encanto y poder emocional han sido reconocidos por el Sombrero Seleccionador del alma.<br><br>
+      Atentamente,<br>
+      El director del corazón de Wizi
+    </p>
+  </section>
+
+  <section class="love-potion">
+    <h2>💘 Poción del Amor</h2>
+    <ul>
+      <li onclick="reveal('smile')">3 sonrisas tuyas</li>
+      <li onclick="reveal('look')">2 miradas que hechizan</li>
+      <li onclick="reveal('hug')">1 abrazo que revive</li>
+    </ul>
+    <p id="potionResult"></p>
+  </section>
+
+  <section class="patronus">
+    <h2>🦊 Expecto Patronum</h2>
+    <button onclick="castPatronus()">Lanzar hechizo</button>
+    <div id="patronusResult"></div>
+  </section>
+
+  <script src="script.js"></script>
+</body>
+</html>
